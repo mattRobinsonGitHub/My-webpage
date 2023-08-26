@@ -1,0 +1,176 @@
+html {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ebfbfc;    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1D224c;
+    position: fixed;
+    height: 70px;
+    
+}
+
+.nav-list > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    width: 100px;
+    list-style: none;
+    
+}
+
+.nav-link{
+    color: #ebfbfc;
+    text-decoration: none;
+}
+
+#welcome {
+    padding-top: 70px;
+    height: 100vh;
+    background-color: #1D224c;
+    color: #ebfbfc;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 70px);
+    padding-left: 5%    
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+}
+
+#projects {
+    background-color: #ebfbfc;
+    padding: 0 5%;
+}
+
+#projects h2 {
+    color: #1D224c;
+}
+
+.project-grid-tile {
+    background-color: #1D224c;
+    color: #ebfbfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.project-grid-tile img {
+    height: 200px;
+    
+}
+
+.project-grid-tile a {
+    text-decoration: none;
+    color: #ebfbfc;
+    
+}
+
+.project-grid-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 2rem
+}
+
+.meme {
+    order: 2
+}
+
+.tindog {
+    order: 3;
+}
+
+#about {
+    background-color: #1D224c;
+    color: #ebfbfc;
+    padding: 0 5%;
+    
+}
+
+#about h2 {
+    padding-top: 5%;
+}
+
+#about img {
+    height: 200px;
+    border-radius: 40%
+}
+
+#about a {
+    color: #ebfbfc;
+}
+
+.last {
+    padding-bottom: 5%;
+}
+
+#contact {
+    color: #1D224c;
+    padding: 0 5%;
+}
+
+#contact ul {
+    display: flex;
+    padding: 0
+}
+
+#contact li {
+    list-style: none;
+    width: 30%
+}
+
+#contact a {
+    text-decoration: none;
+    color: #1D224c;
+}
+
+footer {
+    padding: 5%;
+    background-color: #1D224c;
+    color: #ebfbfc;
+}
+
+@media (max-width: 850px){
+    html {
+        font-size: 14px;
+    }
+
+    .project-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem
+    }
+
+    .project-grid-tile {
+        background-color: #1D224c;
+        color: #ebfbfc;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+}
